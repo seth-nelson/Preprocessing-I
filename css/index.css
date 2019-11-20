@@ -133,8 +133,107 @@ table {
 html,
 body {
   height: 100%;
+  background-color: black;
 }
-/* New Styles */
 h1 {
-  color: red;
+  font-size: 3em;
+  color: black;
+  text-align: center;
 }
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1em;
+}
+/* Main CSS */
+.container {
+  width: 100%;
+  margin: 10px;
+  Background-color: gray;
+  border: solid #15d4bb 2px;
+  border-radius: 6em;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: black;
+}
+.nav-content a {
+  text-decoration: none;
+  color: #15d4bb;
+  margin: 2em;
+  padding: 8px;
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+.intro-container {
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  text-align: center;
+}
+.why-hire-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  border: 2px solid #15d4bb;
+  border-radius: 1em;
+  background-color: black;
+  color: #15d4bb;
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 2em;
+  border: 2px solid #15d4bb;
+  border-radius: 1em;
+  background-color: black;
+  color: #15d4bb;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+.work-history {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 2em;
+  border: 2px solid #15d4bb;
+  border-radius: 1em;
+  background-color: black;
+  color: #15d4bb;
+}
+.footer-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: black;
+}
+.contact a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #15d4bb;
+  margin: 1.5em;
+  padding: 10px;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+a:hover {
+  background-color: gray;
+  color: black;
+  border: solid #15d4bb 2px;
+}
+/* Variables */
