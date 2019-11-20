@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -51,6 +52,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+
 }
 
 html, body {
@@ -68,15 +70,21 @@ h3 {
 	font-size: 2em;
 }
 
+h4 {
+	color: rgb(247, 183, 9);
+}
+
 p {
 	font-size: 1em;
+	color: gray;
 }
 
 /* Main CSS */
 
 .container {
-	width: 100%;
-	margin: 10px;
+	width: 95%;
+	max-width: 1024px;
+	margin: 0 auto;
 	Background-color: gray;
 	border: solid @accent-color 2px;
 	border-radius: 6em;
@@ -99,8 +107,6 @@ p {
 	border-top-left-radius: 1em;
 }
 
-
-
 .intro-container {
 	margin: 2em;
 	display: flex;
@@ -121,6 +127,14 @@ p {
 	background-color: @background-color;
 	color: @accent-color;
 	text-align: center;
+
+	span {
+		color: rgb(21, 247, 32);
+	
+		&:hover {
+			color: rgb(173, 10, 173);
+		}
+	}
 }
 
 .skills-container {
@@ -139,7 +153,15 @@ p {
 .skills-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 	font-size: 20px;
+	padding: 20px;
+}
+
+.skills-list .skill {
+	border: 1px solid @accent-color;
+	padding: 20px;
+	margin: 10px;
 }
 
 .work-history {
@@ -173,14 +195,33 @@ p {
 
 a:hover {
 	background-color: gray;
-	color: black;
+	color: rgb(247, 183, 9);
 	border: solid @accent-color 2px;
+}
+
+@media only screen and (max-width: 500px) {
+	.nav-content a {
+		margin: 1em;
+		padding: 5px;
+	}
+
+	.footer-bar {
+		display: flex;
+		flex-wrap: column;
+		justify-content: center;
+	}
+	
+	.contact a {
+		font-size: 8px;
+		margin: 1em;
+		padding: 10px;
+	}
 }
 
 
 /* Variables */
 
-@accent-color: rgb(21, 212, 187);
+@accent-color: rgb(136, 223, 252);
 @background-color: black;
 @border-radius: 1em;
 @section-width: 80%;
